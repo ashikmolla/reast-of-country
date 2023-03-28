@@ -1,11 +1,13 @@
 
 import './App.css';
 import Counties from './Coumpunent/Counties/Counties';
+import Header from './Coumpunent/Header/Header';
 
 
 function App() {
   return (
     <div className="App">
+       <Header></Header>
        <Counties></Counties>
 
       

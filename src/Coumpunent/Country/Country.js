@@ -2,7 +2,7 @@ import React from 'react';
 import './Country.css'
 
 const Country = (props) => {
-    console.log(props);
+    // console.log(props);
     const { name, population,area,region,flags} = props.country;
     return (
         <div className='country'>

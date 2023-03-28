@@ -17,7 +17,7 @@ const Counties = () => {
             <h1>Hello from countries :- {Counties.length}</h1>
            <div className='counties-container'>
            {
-                Counties.map(country=> <Country country={country}></Country>)
+                Counties.map(country=> <Country country={country} key={country.cca3}></Country>)
             }
             {/* {
               Counties.map(country=>(<Country country={country} name={country.name.common} population={country.population}  area={country.area}image={country.flags.svg}></Country>))
