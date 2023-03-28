@@ -36,18 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.contryDetalies{
-  border: 5px salmon;
-  background-color: #61dafb;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 5px;
-  width: 400px;
-  float: left;
-  gap: 20px;
-  
-}
-.contryDetalies img{
-  width:300px;
-  height: 200px;
-}

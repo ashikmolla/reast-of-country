@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Country from '../Country/Country';
+import './Counties.css'
 
 
 
@@ -9,16 +10,19 @@ const Counties = () => {
         fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
         .then(data=>setCountries(data));
+        console.log(Counties)
     }, [])
     return (
         <div>
             <h1>Hello from countries :- {Counties.length}</h1>
-            
-           <div>
-            {
-              Counties.map(country=>(<Country name={country.name.common} population={country.population} image={country.flags.png}></Country>))
-              
+           <div className='counties-container'>
+           {
+                Counties.map(country=> <Country country={country}></Country>)
             }
+            {/* {
+              Counties.map(country=>(<Country country={country} name={country.name.common} population={country.population}  area={country.area}image={country.flags.svg}></Country>))
+              
+            } */}   
            </div>
         </div>
     )

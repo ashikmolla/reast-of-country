@@ -1,0 +1,11 @@
+.country{
+    border: 5px salmon;
+    background-color: burlywood;
+    padding: 5px;
+    
+    
+  }
+  .country img{
+    width:300px;
+    height: 200px;
+  }
